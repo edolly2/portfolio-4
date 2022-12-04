@@ -1,14 +1,17 @@
 import './App.css';
-import Button from './components/Button';
 import Header from './components/Header';
+import MobileMenu from './components/MobileMenu';
 import HomePage from './pages/HomePage';
+import { useState } from 'react';
 
 function App() {
+  const [mobileMenuActive, setMobileMenuActive] = useState(false);
+
   return (
     <div className="App">
-      <Header />
+      <Header onMenuClick={() => { setMobileMenuActive(!mobileMenuActive) }} />
+      <MobileMenu style={{ display: mobileMenuActive ? 'flex' : 'none' }} />
       <HomePage />
-      <Button text='HELOOOOO' color="panic" />
     </div>
   );
 }

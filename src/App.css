@@ -10,9 +10,16 @@ body {
   background-position: center;
 }
 
+.App {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
 .icon {
   font-size: 4rem;
+  /* width: 4rem; */
   color: white;
+  margin: auto 0;
   /* color: rgba(119, 119, 119, 0.5); */
 }
 

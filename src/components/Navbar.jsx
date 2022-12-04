@@ -7,24 +7,26 @@ const NavWrapper = styled.div`
 width: 100%;
 display: flex;
 justify-content: space-between;
-align-items: center;
+align-items: flex-start;
 `;
 
-const SiteBrandWrapper = styled.div``;
+const SiteBrandWrapper = styled.div`
+display: flex;
+`;
 
 const SiteBrand = styled.img`
-width: 4rem;
+width: calc(4rem + 2vw);
 height: auto;
 `;
 
 
-const Navbar = () => {
+const Navbar = (props) => {
   return (
     <NavWrapper>
       <SiteBrandWrapper>
         <SiteBrand src={Logo} alt='Logo with the letters E and D' />
       </SiteBrandWrapper>
-      <CgMenuGridO className='icon menu-icon' />
+      <CgMenuGridO className='icon menu-icon' onClick={props.onMenuClick} />
     </NavWrapper>
   )
 }

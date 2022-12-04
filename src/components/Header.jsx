@@ -3,14 +3,16 @@ import Navbar from './Navbar';
 
 const HeaderWrapper = styled.div`
   width: 100%;
+  /* height: 4rem; */
   /* margin-bottom: 2.4rem; */
-  /* display: flex; */
+  display: flex;
+  /* align-items: center; */
 `;
 
-const Header = () => {
+const Header = (props) => {
   return (
     <HeaderWrapper>
-      <Navbar />
+      <Navbar onMenuClick={props.onMenuClick} />
     </HeaderWrapper>
   );
 };

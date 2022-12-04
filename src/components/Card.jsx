@@ -14,7 +14,11 @@ gap: 2.4rem;
 box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
 background-color: rgba(119, 119, 119, 0.3);
 backdrop-filter: blur(5px);
-margin-top: 50%;
+/* position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%); */
+/* margin-top: 50%; */
 /* margin-bottom: 100%; */
 `;
 
