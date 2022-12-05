@@ -3,14 +3,14 @@ import Button from '../components/Button';
 import styled from 'styled-components';
 
 const HomePageWrapper = styled.div`
-overflow: hidden;
+/* overflow: hidden; */
 display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
 /* align-items: center; */
 width: 100%;
-height: 100vh;
+height: 100%;
 /* margin-top: 20%; */
 /* margin-bottom: 50%; */
 /* height: calc(100vh - 2.4rem); */
@@ -30,6 +30,9 @@ align-items: center;
 const HomePage = () => {
   return (
     <HomePageWrapper className='home-page'>
+      <div>
+        <h1><span className="primary-text">Web</span><span className="white-text">Developer</span></h1>
+      </div>
       <Card />
       <HomeBtnGroup>
         <Button text='EXPLORE' color="primary" />

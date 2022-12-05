@@ -15,7 +15,7 @@ display: flex;
 `;
 
 const SiteBrand = styled.img`
-width: calc(4rem + 2vw);
+width: calc(4rem + 1.5vw);
 height: auto;
 `;
 

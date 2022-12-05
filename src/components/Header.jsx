@@ -2,10 +2,12 @@ import styled from 'styled-components';
 import Navbar from './Navbar';
 
 const HeaderWrapper = styled.div`
-  width: 100%;
+  max-width: 100vw;
+  padding: 1.6rem;
   /* height: 4rem; */
   /* margin-bottom: 2.4rem; */
   display: flex;
+  /* position: absolute; */
   /* align-items: center; */
 `;
 

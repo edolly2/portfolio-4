@@ -6,6 +6,10 @@ border-radius: 0.8rem;
 width: 12rem;
 height: 4rem;
 margin: 4.8rem 0;
+&:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
 `;
 
 const Button = ({ color, text }) => {

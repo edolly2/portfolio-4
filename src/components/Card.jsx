@@ -14,7 +14,7 @@ gap: 2.4rem;
 box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
 background-color: rgba(119, 119, 119, 0.3);
 backdrop-filter: blur(5px);
-/* position: absolute;
+/* position: relative;
 top: 50%;
 left: 50%;
 transform: translate(-50%, -50%); */
@@ -23,8 +23,8 @@ transform: translate(-50%, -50%); */
 `;
 
 const CardImg = styled.img`
-width: 18.4rem; 
-/* min-width: 12.8rem; */
+/* width: 18.4rem;  */
+max-width: 12.8rem;
 height: auto;
 background-color: rgba(119, 119, 119, 0.7);
 border-radius: 50%;
