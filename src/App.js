@@ -7,19 +7,21 @@ import { Routes, Route } from 'react-router-dom';
 import AboutPage from './pages/AboutPage';
 import SkillsPage from './pages/SkillsPage';
 import ProjectsPage from './pages/ProjectsPage';
+import ContactPage from './pages/ContactPage';
 
 function App() {
   const [mobileMenuActive, setMobileMenuActive] = useState(false);
 
   return (
     <div className="App">
-      <Header onMenuClick={() => { setMobileMenuActive(!mobileMenuActive) }} />
-      <MobileMenu style={{ display: mobileMenuActive ? 'flex' : 'none' }} />
+      <Header onMenuClick={() => { setMobileMenuActive(true) }} />
+      <MobileMenu style={{ display: mobileMenuActive ? 'flex' : 'none' }} onExitClick={() => { setMobileMenuActive(false) }} onNavLinkClick={() => { setMobileMenuActive(false) }} />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/skills" element={<SkillsPage />} />
         <Route path="/projects" element={<ProjectsPage />} />
+        <Route path="/contact" element={<ContactPage />} />
       </Routes>
     </div>
   );
